@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 10s
+  evaluation_interval: 10s
+
+scrape_configs:
+- job_name: 'ftgo-api-gateway'
+  metrics_path: '/actuator/prometheus'
+  static_configs:
+    - targets: ['ftgo-application-ftgo-api-gateway-1:8080']
+      labels:
+        application: 'API Gateway Application'
+- job_name: 'ftgo-order-service'
+  metrics_path: '/actuator/prometheus'
+  static_configs:
+    - targets: ['ftgo-application-ftgo-order-service-1:8080']
+      labels:
+        application: 'Order Service Application'
+- job_name: 'ftgo-delivery-service'
+  metrics_path: '/actuator/prometheus'
+  static_configs:
+    - targets: ['ftgo-application-ftgo-delivery-service-1:8080']
+      labels:
+        application: 'Delivery Service Application'
