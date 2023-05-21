@@ -296,6 +296,10 @@ services:
       - ftgo-api-gateway
       - ftgo-delivery-service
       - ftgo-order-service
+      - ftgo-accounting-service
+      - ftgo-consumer-service
+      - ftgo-kitchen-service
+      - ftgo-restauran-service
 
   grafana:
     image: grafana/grafana-oss:8.5.2

@@ -60,6 +60,8 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
     compile 'javax.el:javax.el-api:2.2.5'
 
+    compile "io.micrometer:micrometer-registry-prometheus:$micrometerVersion"
+
     compile('org.apache.kafka:kafka-clients:2.3.0') {
         force = true
     }

@@ -22,6 +22,7 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-web:$springBootVersion"
     compile "org.springframework.boot:spring-boot-starter-actuator:$springBootVersion"
 
+    compile "io.micrometer:micrometer-registry-prometheus:$micrometerVersion"
     compile 'javax.el:javax.el-api:2.2.5'
 
     compile('org.apache.kafka:kafka-clients:2.3.0') {

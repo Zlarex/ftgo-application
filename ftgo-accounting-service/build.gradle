@@ -21,6 +21,8 @@ dependencies {
     compile "io.eventuate.local.java:eventuate-client-java-spring"
     compile "io.eventuate.local.java:eventuate-client-java-spring-jdbc"
     compile "io.eventuate.local.java:eventuate-local-java-spring-jdbc"
+
+    compile "io.micrometer:micrometer-registry-prometheus:$micrometerVersion"
     
     compile('org.apache.kafka:kafka-clients:2.3.0') {
         force = true

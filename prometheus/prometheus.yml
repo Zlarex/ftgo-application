@@ -21,3 +21,27 @@ scrape_configs:
     - targets: ['ftgo-application-ftgo-delivery-service-1:8080']
       labels:
         application: 'Delivery Service Application'
+- job_name: 'ftgo-accounting-service'
+  metrics_path: '/actuator/prometheus'
+  static_configs:
+    - targets: ['ftgo-application-ftgo-accounting-service-1:8080']
+      labels:
+        application: 'Accounting Service Application'
+- job_name: 'ftgo-consumer-service'
+  metrics_path: '/actuator/prometheus'
+  static_configs:
+    - targets: ['ftgo-application-ftgo-consumer-service-1:8080']
+      labels:
+        application: 'Consumer Service Application'
+- job_name: 'ftgo-kitchen-service'
+  metrics_path: '/actuator/prometheus'
+  static_configs:
+    - targets: ['ftgo-application-ftgo-kitchen-service-1:8080']
+      labels:
+        application: 'Kitchen Service Application'
+- job_name: 'ftgo-restaurant-service'
+  metrics_path: '/actuator/prometheus'
+  static_configs:
+    - targets: ['ftgo-application-ftgo-restaurant-service-1:8080']
+      labels:
+        application: 'Restaurant Service Application'
