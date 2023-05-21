@@ -299,7 +299,7 @@ services:
       - ftgo-accounting-service
       - ftgo-consumer-service
       - ftgo-kitchen-service
-      - ftgo-restauran-service
+      - ftgo-restaurant-service
 
   grafana:
     image: grafana/grafana-oss:8.5.2
